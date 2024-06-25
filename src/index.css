@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+  /* colors */
+  --title-color: #2f2f2f;
+  --text-color: #111111;
+  --white-color: #f6f6f6;
+  --golden-color: #ffcb74;
+  /* Font size */
+  --text-fs: 16px;
+  /* Fontfamily */
+  --font-family: Outfit, "poppins";
+}
+
+
+a {
+  text-decoration: none;
+  font-family: var(--font-family);
+
+}
+
+body {
+  background-color: var(--white-color);
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.navbar-container {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 97%;
+}
+
+.container {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 96%;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+li {
+  list-style: none;
+}
