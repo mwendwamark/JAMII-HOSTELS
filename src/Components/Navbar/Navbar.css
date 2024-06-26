@@ -40,6 +40,10 @@
     gap: 2px;
 }
 
+.up-right-arrow{
+    color: var(--title-color);
+    font-weight: 900;
+}
 .auth-links-section ul li a,
 .nav-links-section ul li a {
     color: var(--title-color);
@@ -101,6 +105,10 @@
         border-radius: 12px;
     }
 
+    .up-right-arrow {
+        color: var(--white-color);
+    }
+
     .nav-links-section.active {
         display: flex;
     }
@@ -128,6 +136,4 @@
     .logo-section a img {
         width: 85px;
     }
-
-
 }

@@ -32,7 +32,7 @@ const Navbar = () => {
               </li>
               <li className="navbar-faqs">
                 <NavLink to="/faqs">Faqs </NavLink>
-                <GoArrowUpRight />
+                <GoArrowUpRight className="up-right-arrow" />
               </li>
               <li>
                 <NavLink to="/contacts">Contacts</NavLink>
