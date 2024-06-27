@@ -1,0 +1,232 @@
+.home-page-intro {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    background-image: url("../../assets/HomeImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 102%;
+    color: white;
+    overflow: visible;
+}
+
+.gradient {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8), transparent);
+}
+
+.home-page-intro-contents {
+    position: relative;
+    z-index: 1;
+    color: var(--white-color);
+}
+
+.welcome-message-section {
+    padding: 10px;
+    padding-left: 60px;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.welcome-message-section h1 {
+    font-size: 45px;
+}
+
+.welcome-message-section p em,
+.welcome-message-section h1 span {
+    color: var(--golden-color);
+}
+
+.welcome-message-section p {
+    font-size: 17px;
+}
+
+.search-bar {
+    position: absolute;
+    width: 35%;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 13px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: transparent;
+}
+
+.search-bar .search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--text-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar .search-button:hover {
+    background-color: var(--text-color);
+    color: var(--white-color);
+}
+
+@media screen and (max-width: 1200px) {
+    .home-page-intro {
+        height: 60vh;
+    }
+
+    .welcome-message-section h1 {
+        font-size: 2.4em;
+    }
+
+    .welcome-message-section h2 {
+        font-size: 1.3em;
+    }
+
+    .search-bar {
+        bottom: -90px;
+        padding: 8px;
+    }
+
+    .search-bar input,
+    .search-bar .search-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .home-page-intro {
+        height: 60vh;
+    }
+
+    .welcome-message-section {
+        max-width: 70%;
+    }
+
+    .search-bar {
+        bottom: -90px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .home-page-intro {
+        margin-top: 20px;
+        height: 50vh;
+    }
+
+    .welcome-message-section {
+        padding: 8px;
+        padding-left: 40px;
+    }
+    .welcome-message-section h1 {
+        font-size: 2.1em;
+    }
+
+    .welcome-message-section h2 {
+        font-size: 1.2em;
+    }
+
+    .welcome-message-section {
+        padding: 10px;
+        max-width: 90%;
+    }
+
+    .search-bar {
+        bottom: -50px;
+        padding: 6px;
+    }
+
+    .search-bar input,
+    .search-bar .search-button {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home-page-intro {
+        height: 50vh;
+    }
+
+    .home-page-intro-contents {
+        padding-bottom: 50px;
+    }
+    .welcome-message-section h1 {
+        font-size: 1.8em;
+    }
+
+    .welcome-message-section h2 {
+        font-size: 1em;
+    }
+
+    .welcome-message-section p {
+        font-size: 0.9em;
+    }
+
+    .search-bar {
+        bottom: -10px;
+        padding: 4px;
+        width: 50%;
+    }
+
+    .search-bar input,
+    .search-bar .search-button {
+        font-size: 10px;
+        padding: 4px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .home-page-intro{
+        margin-top: 10px;
+    }
+
+    .welcome-message-section{
+        max-width: 100%;
+    }
+    .welcome-message-section h1 {
+        font-size: 1.8em;
+    }
+
+    .welcome-message-section h2 {
+        font-size: 0.9em;
+    }
+
+    .welcome-message-section p {
+        font-size: 0.8em;
+    }
+
+    .search-bar {
+        bottom: -5px;
+        padding: 4px;
+        width: 60%;
+    }
+
+    .search-bar input,
+    .search-bar .search-button {
+        font-size: 8px;
+        padding: 2px;
+    }
+}

@@ -47,7 +47,7 @@ body {
   margin-right: auto;
   max-width: 96%;
 }
-
+input,
 button {
   outline: none;
   border: none;
@@ -56,3 +56,4 @@ button {
 li {
   list-style: none;
 }
+
