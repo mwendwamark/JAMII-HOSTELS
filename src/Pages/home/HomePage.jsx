@@ -1,10 +1,11 @@
 import React from "react";
 import "./HomePage.css";
 import { IoSearch } from "react-icons/io5";
+import FeaturedHostels from "../../Components/FeaturedHostels/FeaturedHostels";
 const HomePage = () => {
   return (
     <>
-      <div className="home-page-intro container ">
+      <div className="home-page-intro">
         <div className="gradient"></div>
         <div className="home-page-intro-contents">
           <div className="welcome-message-section">
@@ -30,6 +31,7 @@ const HomePage = () => {
           </div>{" "}
         </div>
       </div>
+      <FeaturedHostels/>
     </>
   );
 };

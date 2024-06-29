@@ -8,7 +8,7 @@
     background-image: url("../../assets/HomeImage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: 100% 102%;
+    background-size: 100% 120%;
     color: white;
     overflow: visible;
 }
@@ -49,11 +49,9 @@
 }
 
 .search-bar {
-    position: absolute;
-    width: 35%;
-    bottom: -80px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0 auto;
+    margin-bottom: -40px;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,16 +128,24 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 850px) {
+
     .home-page-intro {
-        margin-top: 20px;
-        height: 50vh;
+        height: 60vh;
+    }
+
+    .home-page-intro {
+        width: 100%;
     }
 
     .welcome-message-section {
         padding: 8px;
         padding-left: 40px;
+        min-width: 100% !important;
+        text-align: center;
+        gap: 8px;
     }
+
     .welcome-message-section h1 {
         font-size: 2.1em;
     }
@@ -155,7 +161,8 @@
 
     .search-bar {
         bottom: -50px;
-        padding: 6px;
+        padding: 8px;
+        width: 40%;
     }
 
     .search-bar input,
@@ -167,18 +174,11 @@
 
 @media screen and (max-width: 600px) {
     .home-page-intro {
-        height: 50vh;
+        height: 60vh;
     }
 
     .home-page-intro-contents {
         padding-bottom: 50px;
-    }
-    .welcome-message-section h1 {
-        font-size: 1.8em;
-    }
-
-    .welcome-message-section h2 {
-        font-size: 1em;
     }
 
     .welcome-message-section p {
@@ -187,7 +187,7 @@
 
     .search-bar {
         bottom: -10px;
-        padding: 4px;
+        padding: 6px;
         width: 50%;
     }
 
@@ -199,19 +199,8 @@
 }
 
 @media screen and (max-width: 400px) {
-    .home-page-intro{
-        margin-top: 10px;
-    }
-
-    .welcome-message-section{
+    .welcome-message-section {
         max-width: 100%;
-    }
-    .welcome-message-section h1 {
-        font-size: 1.8em;
-    }
-
-    .welcome-message-section h2 {
-        font-size: 0.9em;
     }
 
     .welcome-message-section p {
@@ -220,7 +209,7 @@
 
     .search-bar {
         bottom: -5px;
-        padding: 4px;
+        padding: 6px;
         width: 60%;
     }
 

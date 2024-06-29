@@ -1,0 +1,158 @@
+.popular-hostels {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.popular-hostels-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+}
+
+.popular-hostels-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+.popular-hostels-title p {
+    width: 50%;
+    text-align: center;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.popular-hostels-cards {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.popular-hostel-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 32%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.popular-hostel-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.popular-hostel-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.popular-hostel-card h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--title-color);
+    margin: 10px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #777;
+    margin: 0 10px;
+}
+
+.location p {
+    margin: 0;
+}
+
+.popular-hostel-pricing-and-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.popular-hostel-pricing-and-rating p span {
+    font-size: 18px;
+    background: linear-gradient(45deg, var(--text-color), var(--golden-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.popular-hostel-pricing-and-rating p {
+    font-size: 18px;
+    color: #333;
+}
+
+.popular-rating p {
+    color: var(--white-color)
+}
+
+.popular-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--golden-color);
+    background-color: var(--text-color);
+    padding: 6px;
+    border-radius: 20px;
+}
+
+.popular-rating p {
+    margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .popular-hostels-cards {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 1040px) {
+    .popular-hostels-cards {
+        width: 88%;
+    }
+
+    .popular-hostel-card {
+        width: 31%;
+    }
+}
+@media screen and (max-width: 870px) {
+    .popular-hostels-cards {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .popular-hostels-title h2 {
+        width: 100%;
+        font-size: 28px;
+    }
+
+    .popular-hostels-title p {
+        width: 96%;
+    }
+    .popular-hostels-cards {
+        gap: 20px;
+    }
+    .popular-hostel-card {
+        width: 100%;
+    }
+}
