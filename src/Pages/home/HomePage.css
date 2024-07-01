@@ -8,7 +8,7 @@
     background-image: url("../../assets/HomeImage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: 100% 120%;
+    background-size: 100% 140%;
     color: white;
     overflow: visible;
 }
@@ -132,6 +132,7 @@
 
     .home-page-intro {
         height: 60vh;
+        background-size: 100% 110%;
     }
 
     .home-page-intro {
@@ -162,7 +163,7 @@
     .search-bar {
         bottom: -50px;
         padding: 8px;
-        width: 40%;
+        width: 60%;
     }
 
     .search-bar input,
@@ -175,6 +176,7 @@
 @media screen and (max-width: 600px) {
     .home-page-intro {
         height: 60vh;
+        background-size: 100% 105%;
     }
 
     .home-page-intro-contents {
@@ -187,8 +189,8 @@
 
     .search-bar {
         bottom: -10px;
-        padding: 6px;
-        width: 50%;
+        padding: 11px;
+        width: 65%;
     }
 
     .search-bar input,
@@ -199,6 +201,11 @@
 }
 
 @media screen and (max-width: 400px) {
+    .home-page-intro {
+        height: 60vh;
+        background-size: 100% 99%;
+    }
+
     .welcome-message-section {
         max-width: 100%;
     }
@@ -209,8 +216,8 @@
 
     .search-bar {
         bottom: -5px;
-        padding: 6px;
-        width: 60%;
+        padding: 10px;
+        width: 80%;
     }
 
     .search-bar input,
