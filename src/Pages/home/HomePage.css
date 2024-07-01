@@ -169,7 +169,7 @@
     .search-bar input,
     .search-bar .search-button {
         font-size: 12px;
-        padding: 6px;
+        padding: 8px;
     }
 }
 
@@ -196,7 +196,7 @@
     .search-bar input,
     .search-bar .search-button {
         font-size: 10px;
-        padding: 4px;
+        padding: 8px;
     }
 }
 
@@ -223,6 +223,6 @@
     .search-bar input,
     .search-bar .search-button {
         font-size: 8px;
-        padding: 2px;
+        padding: 6px;
     }
 }
