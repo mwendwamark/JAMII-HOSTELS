@@ -50,7 +50,7 @@ body {
 input,
 button {
   outline: none;
-  border: none;
+  border: none;  position: relative;
 }
 
 li {

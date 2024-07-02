@@ -1,0 +1,263 @@
+.login-page {
+    width: 85%;
+    padding: 10px;
+    max-height: 76vh;
+    background-color: var(--white-color);
+    margin-bottom: 300px;
+}
+
+.login-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    border: 1px solid #ccc;
+    height: 100vh;
+}
+
+.login-side-image {
+    width: 50%;
+    position: relative;
+    height: 100%;
+}
+
+.login-side-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-overlay-text {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 36%;
+    transform: translate(-35%, 40%);
+    text-align: center;
+    color: var(--background-color);
+}
+
+.login-overlay-text h1 {
+    background-image: linear-gradient(90deg, var(--text-color), var(--title-color));
+    background-clip: text;
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: calc(1em / 16);
+    -webkit-background-clip: text;
+    color: var(--white-color);
+    font-size: 6vmin;
+    font-weight: 700;
+    font-family: var(--title-ff);
+}
+
+.login-overlay-text p {
+    font-weight: 500;
+    font-size: 28px;
+    font-family: Outfit, "poppins";
+    margin-top: 2rem;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    color: var(--text-color);
+    background-image: linear-gradient(90deg, #ccc, var(--white-color));
+    background-clip: text;
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: calc(1em / 16);
+    -webkit-background-clip: text;
+}
+
+.login-form-div {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.login-form-div h1 {
+    text-align: center;
+    padding: 10px;
+    color: var(--text-color);
+    font-size: 40px;
+    position: relative;
+}
+
+.login-form-div h1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    width: 7%;
+    height: 3px;
+    background-color: var(--golden-color);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+.login-form-inputs {
+    margin-bottom: 20px;
+}
+
+.login-form-inputs label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-form-inputs input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.password-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-input input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.show-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.sign-up-redirect p a,
+.forgot-password p a {
+    float: right;
+    color: blue;
+    transition: 0.7s;
+}
+
+.sign-up-redirect p a:hover,
+.forgot-password p a:hover {
+    text-decoration: underline;
+}
+
+.login-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+}
+
+.login-buttons button {
+    padding: 8px;
+    color: var(--white-color);
+    background-color: var(--text-color);
+    width: 50%;
+    font-size: 18px;
+}
+
+.google-login {
+    align-items: center;
+    margin: 0 auto;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+}
+
+.divider::before {
+    margin-right: 10px;
+}
+
+.divider::after {
+    margin-left: 10px;
+}
+
+.divider span {
+    color: #666;
+    font-size: 14px;
+}
+
+.sign-up-redirect {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    color: #666;
+}
+
+@media screen and (max-width: 1024px) {
+    .login-form-div {
+        padding: 10px;
+    }
+
+    .login-buttons button {
+        width: 60%;
+    }
+
+    .divider {
+        width: 70%;
+    }
+
+    .login-overlay-text {
+        left: 34%;
+        transform: translate(-35%, 0%);
+    }
+
+    .login-page {
+        width: 100%;
+    }
+
+    .login-overlay-text p {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .login-form-div {
+        padding: 5px;
+        gap: 15px;
+    }
+
+    .login-side-image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .login-form-div {
+        padding: 2px;
+    }
+
+    .login-page {
+        padding: 2px;
+    }
+
+    .forgot-password p a {
+        font-size: 14px;
+    }
+
+    .login-buttons button {
+        width: 100%;
+    }
+}
